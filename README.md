@@ -308,11 +308,11 @@ HTTP Server (127.0.0.1:4390)
 
 | Function | Purpose | Input | Output |
 |----------|---------|-------|--------|
-| `preprocessing_input()` | preprocessing user input | Dict with car specifications | DataFrame |
+| `preprocessing_input()` | Preprocessing user input | Dict with car specifications | DataFrame |
 | `make_prediction()` | Get price estimate | Preprocessed DataFrame | Dict with price |
 | `parse_http_request()` | Parse raw HTTP | Raw bytes | method, path, body |
 | `create_http_response()` | Build HTTP response | status code, type, body | HTTP bytes |
-| `get_content_type()` | Map extension → MIME type | filename | MIME string |
+| `get_content_type()` | Get content of file based on file extension | filename | MIME string |
 | `handle_client()` | Process single connection | socket, address | None |
 | `check_rate_limit()` | Enforce 1 req/sec rule | IP address | boolean |
 
