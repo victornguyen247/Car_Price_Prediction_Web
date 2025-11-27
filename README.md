@@ -308,7 +308,7 @@ HTTP Server (127.0.0.1:4390)
 
 | Function | Purpose | Input | Output |
 |----------|---------|-------|--------|
-| `preprocessing_input()` | Encode user input | Dict with car specs | DataFrame |
+| `preprocessing_input()` | preprocessing user input | Dict with car specifications | DataFrame |
 | `make_prediction()` | Get price estimate | Preprocessed DataFrame | Dict with price |
 | `parse_http_request()` | Parse raw HTTP | Raw bytes | method, path, body |
 | `create_http_response()` | Build HTTP response | status code, type, body | HTTP bytes |
